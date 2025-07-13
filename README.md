@@ -99,7 +99,7 @@ describe('template spec', () => {
   it('Criar Tabela', () => {
     cy.task('sqlServer', 'SELECT * FROM clientes')
     .then((response) => {
-      cy.log(JSON.stringify(response))
+      cy.log(response)
     })
   })
 })
