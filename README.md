@@ -56,8 +56,14 @@ const dbConnection = {
 }
 
 async function buscarDados(query) {
+    try {
     const conect = await sql.connect(dbConnection)
+    console.log('conectou com sucesso')
     return await conect.request().query(query)
+    } catch (error) {
+    console.log('deu ruim ', error);
+    }
+
 }
 
 module.exports = (on, config) => {
