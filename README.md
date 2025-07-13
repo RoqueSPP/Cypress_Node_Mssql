@@ -3,6 +3,11 @@
 
 Este projeto mostra como integrar o Cypress com um banco de dados SQL Server utilizando Node.js.
 
+2️⃣ **para iniciar o projeto crie o packager.json**
+
+```bash
+npm install
+```
 ---
 
 ## 📦 Dependências
