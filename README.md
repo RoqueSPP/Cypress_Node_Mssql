@@ -6,7 +6,7 @@ Este projeto mostra como integrar o Cypress com um banco de dados SQL Server uti
 2️⃣ **para iniciar o projeto crie o packager.json**
 
 ```bash
-npm install
+npm init
 ```
 ---
 
