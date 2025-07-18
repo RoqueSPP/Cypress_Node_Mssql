@@ -3,6 +3,11 @@
 
 Este projeto mostra como integrar o Cypress com um banco de dados SQL Server utilizando Node.js.
 
+2️⃣ **para iniciar o projeto crie o packager.json**
+
+```bash
+npm init
+```
 ---
 
 ## 📦 Dependências
@@ -51,8 +56,14 @@ const dbConnection = {
 }
 
 async function buscarDados(query) {
+    try {
     const conect = await sql.connect(dbConnection)
+    console.log('conectou com sucesso')
     return await conect.request().query(query)
+    } catch (error) {
+    console.log('deu ruim ', error);
+    }
+
 }
 
 module.exports = (on, config) => {
@@ -94,7 +105,7 @@ describe('template spec', () => {
   it('Criar Tabela', () => {
     cy.task('sqlServer', 'SELECT * FROM clientes')
     .then((response) => {
-      cy.log(JSON.stringify(response))
+      cy.log(response)
     })
   })
 })
