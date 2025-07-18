@@ -1,3 +1,4 @@
-import sqlServer from 'cypress-sql-server';
-sqlServer.loadDBCommands();
+
+// Import commands.js using ES2015 syntax:
+
 import './commands'

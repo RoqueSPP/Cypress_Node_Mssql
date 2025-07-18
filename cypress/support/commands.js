@@ -1,17 +1,6 @@
-import * as script from '../fixtures/db'
+import * as sql from '../fixtures/insert'
+// -- This is a parent command --
+ Cypress.Commands.add('insert', () => {
+    cy.task('sqlServer', sql.insert())
 
-Cypress.Commands.add('InsertTable', () => {
-    cy.sqlServer(script.InsertTable())
-})
-
-Cypress.Commands.add('UpdateTable', () => {
-    cy.sqlServer(script.UpdateTable())
-})
-
-Cypress.Commands.add('DeleteTable', () => {
-    cy.sqlServer(script.DeleteTable())
-})
-
-Cypress.Commands.add('SelectTable', () => {
-    cy.task('sqlServer',script.SelectTable())
-})
+ })

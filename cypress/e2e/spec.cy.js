@@ -1,14 +1,48 @@
-
-
 describe('template spec', () => {
-  it('Criar Tabela', () => {
-    cy.SelectTable()
+  it('Insert info', () => {
+    cy.insert()
+    .then((response) => {
+      console.log(response)
+    })
+   })
+  it('buscar registros', () => {
+    cy.fixture('validar')
     .then((res)=>{
-      cy.log(res.recordset[0].nome)
-      cy.log(res.recordset[1].nome)
-      cy.log(res.recordset[2].nome)
-      cy.log(res.recordset[3].nome)
-      cy.log(res.recordset[4].nome)
+      console.log(res)
+    cy.task('sqlServer', 'SELECT * FROM clientes')
+    .then((response) => {
+      expect(response.recordset[0].nome).eq(res[0].nome)
+      expect(response.recordset[0].cpf).eq(res[0].cpf)
+      expect(response.recordset[0].email).eq(res[0].email)
+      expect(response.recordset[0].estado).eq(res[0].estado)
+      expect(response.recordset[0].telefone).eq(res[0].telefone)
+      expect(response.recordset[1].nome).eq(res[1].nome)
+      expect(response.recordset[1].cpf).eq(res[1].cpf)
+      expect(response.recordset[1].email).eq(res[1].email)
+      expect(response.recordset[1].estado).eq(res[1].estado)
+      expect(response.recordset[1].telefone).eq(res[1].telefone)
+      expect(response.recordset[2].nome).eq(res[2].nome)
+      expect(response.recordset[2].cpf).eq(res[2].cpf)
+      expect(response.recordset[2].email).eq(res[2].email)
+      expect(response.recordset[2].estado).eq(res[2].estado)
+      expect(response.recordset[2].telefone).eq(res[2].telefone)
+      expect(response.recordset[3].nome).eq(res[3].nome)
+      expect(response.recordset[3].cpf).eq(res[3].cpf)
+      expect(response.recordset[3].email).eq(res[3].email)
+      expect(response.recordset[3].estado).eq(res[3].estado)
+      expect(response.recordset[3].telefone).eq(res[3].telefone)
+      expect(response.recordset[4].nome).eq(res[4].nome)
+      expect(response.recordset[4].cpf).eq(res[4].cpf)
+      expect(response.recordset[4].email).eq(res[4].email)
+      expect(response.recordset[4].estado).eq(res[4].estado)
+      expect(response.recordset[4].telefone).eq(res[4].telefone)
+    })
+    })
+  })
+  it('deleta registros', () => {
+    cy.task('sqlServer', 'DELETE clientes')
+    .then((response) => {
+      cy.log(response)
     })
   })
 })

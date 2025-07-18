@@ -1,0 +1,162 @@
+[
+  {
+    "nome": "Ana Souza",
+    "cpf": "12345678901",
+    "email": "ana.souza@email.com",
+    "telefone": "11981234567",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Bruno Lima",
+    "cpf": "23456789012",
+    "email": "bruno.lima@email.com",
+    "telefone": "21991234567",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ"
+  },
+  {
+    "nome": "Carlos Silva",
+    "cpf": "34567890123",
+    "email": "carlos.silva@email.com",
+    "telefone": "31991234567",
+    "cidade": "Belo Horizonte",
+    "estado": "MG"
+  },
+  {
+    "nome": "Daniela Costa",
+    "cpf": "45678901234",
+    "email": "daniela.costa@email.com",
+    "telefone": "41991234567",
+    "cidade": "Curitiba",
+    "estado": "PR"
+  },
+  {
+    "nome": "Eduardo Pereira",
+    "cpf": "56789012345",
+    "email": "edu.pereira@email.com",
+    "telefone": "51991234567",
+    "cidade": "Porto Alegre",
+    "estado": "RS"
+  },
+  {
+    "nome": "Fernanda Dias",
+    "cpf": "67890123456",
+    "email": "fernanda.dias@email.com",
+    "telefone": "71991234567",
+    "cidade": "Salvador",
+    "estado": "BA"
+  },
+  {
+    "nome": "Gabriel Nunes",
+    "cpf": "78901234567",
+    "email": "gabriel.nunes@email.com",
+    "telefone": "62991234567",
+    "cidade": "Goiânia",
+    "estado": "GO"
+  },
+  {
+    "nome": "Helena Martins",
+    "cpf": "89012345678",
+    "email": "helena.martins@email.com",
+    "telefone": "85991234567",
+    "cidade": "Fortaleza",
+    "estado": "CE"
+  },
+  {
+    "nome": "Igor Almeida",
+    "cpf": "90123456789",
+    "email": "igor.almeida@email.com",
+    "telefone": "92991234567",
+    "cidade": "Manaus",
+    "estado": "AM"
+  },
+  {
+    "nome": "Juliana Rocha",
+    "cpf": "01234567890",
+    "email": "juliana.rocha@email.com",
+    "telefone": "67991234567",
+    "cidade": "Campo Grande",
+    "estado": "MS"
+  },
+  {
+    "nome": "Kleber Fonseca",
+    "cpf": "11223344556",
+    "email": "kleber.fonseca@email.com",
+    "telefone": "82991234567",
+    "cidade": "Maceió",
+    "estado": "AL"
+  },
+  {
+    "nome": "Larissa Ramos",
+    "cpf": "22334455667",
+    "email": "larissa.ramos@email.com",
+    "telefone": "95991234567",
+    "cidade": "Boa Vista",
+    "estado": "RR"
+  },
+  {
+    "nome": "Marcelo Araujo",
+    "cpf": "33445566778",
+    "email": "marcelo.araujo@email.com",
+    "telefone": "48991234567",
+    "cidade": "Florianópolis",
+    "estado": "SC"
+  },
+  {
+    "nome": "Natália Cardoso",
+    "cpf": "44556677889",
+    "email": "n.cardoso@email.com",
+    "telefone": "64991234567",
+    "cidade": "Palmas",
+    "estado": "TO"
+  },
+  {
+    "nome": "Otávio Borges",
+    "cpf": "55667788990",
+    "email": "otavio.borges@email.com",
+    "telefone": "63991234567",
+    "cidade": "Porto Velho",
+    "estado": "RO"
+  },
+  {
+    "nome": "Patrícia Mendes",
+    "cpf": "66778899001",
+    "email": "pat.mendes@email.com",
+    "telefone": "84991234567",
+    "cidade": "Natal",
+    "estado": "RN"
+  },
+  {
+    "nome": "Ricardo Teixeira",
+    "cpf": "77889900112",
+    "email": "ricardo.tx@email.com",
+    "telefone": "98991234567",
+    "cidade": "Macapá",
+    "estado": "AP"
+  },
+  {
+    "nome": "Sônia Batista",
+    "cpf": "88990011223",
+    "email": "sonia.batista@email.com",
+    "telefone": "21987654321",
+    "cidade": "Niterói",
+    "estado": "RJ"
+  },
+  {
+    "nome": "Tiago Freitas",
+    "cpf": "99001122334",
+    "email": "tiago.freitas@email.com",
+    "telefone": "31989898989",
+    "cidade": "Uberlândia",
+    "estado": "MG"
+  },
+  {
+    "nome": "Vanessa Lopes",
+    "cpf": "10111213141",
+    "email": "vanessa.lopes@email.com",
+    "telefone": "11981112233",
+    "cidade": "Campinas",
+    "estado": "SP"
+  }
+]
