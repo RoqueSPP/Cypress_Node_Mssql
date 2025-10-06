@@ -11,6 +11,16 @@ const dbConnection = {
         trustServerCertificate: true,
     },
 }
+const dbConnectionDB = {
+    user: process.env.SQL_USERDB,
+    password: process.env.SQL_PASSWORDDB,
+    server: process.env.SQL_SERVERDB,
+    database: process.env.SQL_DATABASEDB,
+    options: {
+        encrypt: false,
+        trustServerCertificate: true,
+    },
+}
 
 async function buscarDados(query) {
     try {
@@ -22,11 +32,25 @@ async function buscarDados(query) {
     }
 
 }
+async function buscarDadosDB(query) {
+    try {
+    const conect = await sql.connect(dbConnectionDB)
+    console.log('conectou com sucesso')
+    return await conect.request().query(query)
+    } catch (error) {
+    console.log('deu ruim ', error);
+    }
 
+}
 module.exports = (on, config) => {
     on('task', {
         sqlServer: (query) => {
             return buscarDados(query)
+        }
+    }),
+        on('task', {
+        sqlServerDB: (query) => {
+            return buscarDadosDB(query)
         }
     })
 }
